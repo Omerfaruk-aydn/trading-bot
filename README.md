@@ -730,5 +730,3 @@ python -m backtest.walk_forward --symbol BTC-USD  --market crypto --hold 3
 ```
 
 ---
-
-*Bu proje Qwen 2.5-1.5B (Alibaba Cloud) modelini kullanır. Anthropic Claude API kullanılmamaktadır.*
