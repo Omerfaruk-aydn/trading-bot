@@ -1,0 +1,84 @@
+# ============================================================
+# TRADING BOT — .gitignore
+# ============================================================
+
+# --- GİZLİ / KİŞİSEL ---
+.env
+*.env
+.env.local
+.env.*.local
+secrets.json
+credentials.json
+
+# --- MODEL AĞIRLIKLARI (büyük dosyalar) ---
+lora_weights/
+lora_weights_sentiment/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# --- LOG & VERİTABANI ---
+logs/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# --- PYTHON ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+*.cover
+
+# --- VERİ DOSYALARI (büyük/kişisel) ---
+data/raw/
+data/cache/
+*.csv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+
+# --- BÜYÜK DATASET DOSYALARI ---
+finetune/datasets_large/
+finetune/datasets/
+
+# --- ML MODEL DOSYALARI (büyük binary) ---
+ml/models/*.pkl
+ml/models/*.joblib
+
+# --- CHECKPOINT DOSYALARI ---
+*_checkpoint.json
+checkpoint_*.json
+
+# --- IDE / EDITOR ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- JUPYTER ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- SANAL ORTAM ---
+venv/
+.venv/
+env/
+.env_backup/
